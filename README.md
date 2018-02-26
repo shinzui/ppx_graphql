@@ -77,7 +77,7 @@ let find_user_role = executable_query [%graphql {|
   }
 |}]
 ```
-Here  `find_user_role` has the type ```id:string -> unit -> <user: <role: [`USER | `ADMIN] option> option>```. See [`github.ml`](https://github.com/andreas/ocaml-graphql-server/blob/ppx/ppx_graphql/examples/github.ml) for a real example using `Lwt` and `Cohttp`.
+Here  `find_user_role` has the type ```id:string -> unit -> <user: <role: [`USER | `ADMIN] option> option>```. See [`github.ml`](https://github.com/andreas/ppx_graphql/blob/master/examples/github.ml) for a real example using `Lwt` and `Cohttp`.
 
 `[%graphql ...]` expects a file `schema.json` to be present in the same directory as the source file. This file should contain an introspection query response.
 
